@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html ">
+    <meta name="viewport">
+    <title>Деревня «Бурхай»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script>
+        function init() {
+            let map = new ymaps.Map('map',{
+                center: [52.120278, 105.342222],
+                zoom: 13
+            })
+             let placemark = new ymaps.Placemark([52.120278, 105.342222], {
+            balloonContent: 'Деревня «Бурхай»',
+            hintContent: 'Деревня «Бурхай»'
+        });
+
+        // Добавляем метку на карту
+        map.geoObjects.add(placemark);
+        }
+        ymaps.ready(init);
+    </script>
+</head>
+<body>
+<!--@import header.html-->
+
+<div class="background"></div>
+<main class="village">
+    <h1>Деревня «Бурхай»</h1>
+    <p>
+        <em>Бурхай</em> - исчезнувший населённый пункт в Иркутском районе <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C">Иркутской области</a> России на территории Голоустненского муниципального образования.
+        <br>Населённый пункт, предположительно, возник в конце XVIII-начале XIX веков как три <a
+            href="https://ru.wikipedia.org/wiki/%D0%91%D1%83%D1%80%D1%8F%D1%82%D1%8B">бурятские</a> улуса, позже объединившиеся. Большинство местных жителей занимались коневодством, заготовкой кормовых растений. Согласно
+        <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D1%8C_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%A1%D0%A1%D0%A1%D0%A0_(1926)">переписи
+            населения СССР 1926 года</a> Бурхайские улусы входили в состав Больше-Голоустенского сельсовета Иркутского района, там насчитывалось 115 хозяйств, 458 жителей (в том числе 237 мужчин и 221 женщина), в основном, буряты. Населённый пункт Бурхай отмечался как жилой на картах 1964 и 1984 годов. На топографической карте Генштаба СССР 1985 года Бурхай указан уже как нежилой.
+    <div>
+        <h3>Архивные материалы</h3>
+        <div class="archive_block">
+        <p id="photoBurk" class="archive">
+        <img style="width: 25%;" src="img/photo_burkhai_1.jpg" alt="Проблемы с загрузкой фотографии">
+        </p>
+        <p class="archive">
+        <img style="width: 25%;" src="img/photo_burkhai_2.jpg" alt="Проблемы с загрузкой фотографии">
+        </p>
+        <p class="archive">
+        <img style="width: 33%;" src="img/photo_burkhai_3.jpg" alt="Проблемы с загрузкой фотографии">
+            <br><br>
+        </p>
+        </div>
+        <p class="archive">
+            <span><em>«Раскопки на месте деревни "Бурхай"»</em></span> <br><br><br>
+        </p>
+        <h4><em>Дополнительная информация:</em></h4>
+        <p>Координаты: 52°07′13″ с. ш. 105°20′32″ в. д</p>
+        <p class="mapName"><em>Деревня «Бурхай» на карте России</em></p>
+        <div id="map" class="map"></div>
+        <p ><em>*Если у вас имеется какая-либо информация и/или фото-/видеоматериалы, касающиеся деревни, описанной на
+            сайте, то свяжитесь с нами через раздел <a href="contacts.html">«Контактая информация»</a></em></p>
+    </div>
+</main>
+<!--@import footer.html-->
+</body>
+</html>

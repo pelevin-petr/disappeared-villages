@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html ">
+    <meta name="viewport">
+    <title>Деревня «Бадан»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script>
+        function init() {
+            let map = new ymaps.Map('map',{
+                center: [52.211944, 105.091389],
+                zoom: 13
+            })
+             let placemark = new ymaps.Placemark([52.211944, 105.091389], {
+            balloonContent: 'Деревня «Бадан»',
+            hintContent: 'Деревня «Бадан»'
+        });
+
+        // Добавляем метку на карту
+        map.geoObjects.add(placemark);
+        }
+        ymaps.ready(init);
+    </script>
+</head>
+<body>
+<header>
+    <div>
+    <ul class="menu">
+        <li><a href="index.html" target="_blank">Главная</a></li>
+        <li>
+            <a href="#menu">Список деревень</a>
+            <ul class="submenu">
+                <li><a href="pashki_village.html" target="_blank">Деревня «Пашки»</a></li>
+                <li><a href="index_2.html" target="_blank">Деревня «Большеусовская»</a></li>
+                <li><a href="badan_village.html" target="_blank">Деревня «Бадан»</a></li>
+                <li><a href="burkhai_village.html" target="_blank">Деревня «Бурхай»</a></li>
+                <li><a href="ulanovo_village.html" target="_blank">Посёлок «Уланово»</a></li>
+                <li><a href="podkamenskoe_village.html" target="_blank">Село «Подкаменское»</a></li>
+                <li><a href="sogdiondon.html" target="_blank">Поселок «Согдиондон»</a></li>
+            </ul>
+        </li>
+        <li> <a href="gallery.html" target="_blank">Галерея</a></li>
+        <li><a href="contacts.html" target="_blank">Контактная информация</a></li>
+    </ul>
+    </div>
+</header>
+
+
+<div class="background"></div>
+<main class="village">
+    <h1>Деревня «Бадан»</h1>
+    <p>
+        <em>Бадан (Бадано-экстракторный завод) </em> — исчезнувший населённый пункт в Иркутском районе <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C">Иркутской области</a> России. Располагался на территории
+        <a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%88%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5_%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Ушаковского муниципального образования</a>. Находился в 25 километров к юго-востоку от посёлка Добролёт посреди тайги.
+        <br><br>
+        Посёлок был образован при бадано-экстракторном заводе в период с 1920-х по начало 1930-х годов. На заводе работали ссыльные из
+        <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%B8%D1%8F">Белaруси</a>,
+        <a href="https://ru.wikipedia.org/wiki/%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0">Украины</a>, <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%82%D0%B2%D0%B0">Литвы</a>, западной России. На предприятии из корней и листьев лекарственного растения
+        <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B4%D0%B0%D0%BD">бадана</a> производили экстракт, используемый для дубления кожи. Заготовка листьев лекарственного растения начиналась в мае. В середине августа проходила заготовка корней. Норма на человека была 200 килограммов в день, однако многие часто перевыполняли норму. Для временного хранения бадана в тайге возвели специальные сооружения, возле которых находились весовщики, взвешивавшие количество растения, собранного каждым человеком.
+        <br><br> Позже бадан доставляли на предприятие. В 1930-е годы в населённом пункте функционировали школа, детский сад, амбулатория, клуб, добротные жилые дома. В 1951 году завод закрыли по причине нерентабельности, и вскоре посёлок Бадан опустел. Некоторые его строения были перевезены в
+        <a href="https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%B1%D1%80%D0%BE%D0%BB%D1%91%D1%82_(%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C)">Добролёт</a>. Однако, на международной миллионной карте мира 1964 года ещё указан населённый пункт Бадан-Завод. На топографической карте Генштаба СССР посёлок Бадан указан как нежилой. На топографической карте Генштаба СССР 1985 года отмечено урочище Бадан.
+        <br> В настоящее время добраться на территорию бывшего населённого пункта Бадан трудно даже на внедорожнике.
+    <div>
+        <h3>Архивные материалы</h3>
+        <p class="archive">
+        <img style="width: 40%;" src="img/photo_badan.jpg" alt="Проблемы с загрузкой фотографии">
+            <br>
+        <span><em>«Исчезнувший Бадан. Источник: <a href="https://angarogni.ru/?p=4660">"Анграские огни"</a>»</em></span>
+        </p>
+        <h4><em>Дополнительная информация:</em></h4>
+        <p>Координаты: 52°12′43″ с. ш. 105°05′29″ в. д.</p>
+        <p class="mapName"><em>Деревня «Бадан» на карте России</em></p>
+        <div id="map" class="map"></div>
+        <p ><em>*Если у вас имеется какая-либо информация и/или фото-/видеоматериалы, касающиеся деревни, описанной на
+            сайте, то свяжитесь с нами через раздел <a href="contacts.html">«Контактая информация»</a></em></p>
+    </div>
+</main>
+<footer>
+    <div >
+        <p class="footerAgreement">Public user contributions licensed under CC BY-SA 4.0 license with attribution required</p>
+    </div>
+    <div class="footerLinks">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Разработчики</a>
+        <a href="#">Поддержка</a>
+    </div>
+</footer></body>
+</html>
